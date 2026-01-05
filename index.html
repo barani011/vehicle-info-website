@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Login page</title> 
+	<link rel="stylesheet" href="index.css">
+<style> 
+</style>
+</head>
+<center>
+    <video autoplay loop muted plays-inline class="background-clip">
+            <source src="car_-_88481 (Original).mp4" type="video/mp4">
+        </video>
+	 <h1 style="background-color: rgba(240, 248, 255, 0.268); border-radius: 16px; color: aliceblue;">WHEELER <span style="background-color: brown;">INFO</span></h1> 
+     <hr> 
+     <br><br><br><br><br><br>
+     <div class="login-card">
+      <div class="card-header">
+        <h1>Login</h1>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="uname"></label>
+            <input type="text" id="username" name="uname" placeholder="Enter Email:" required>
+          </div> <br> 
+          <div class="form-group">
+            <label for="psw"></label>
+            <input type="text" id="password" name="psw" placeholder="Enter Phone no:" required>
+          </div><br>
+          <div class="form-group">
+            <button type="submit" class="login-button" onclick="auth()">Login</button>
+          </div>
+        </form>
+      </div>
+   </div>
+        </div>
+      </form>
+     </div>
+     <script>
+      function auth()
+     {
+       var username = document.getElementById("username").value;
+       var password = document.getElementById("password").value;
+       if(username == "admin@gamil.com" && password == "9080081618")
+       {
+         window.location.assign("mainpage.html");
+         alert("login successful");
+       }
+        else
+       {
+         alert("login fail");
+         return;
+       }
+     }
+     </script>
+  
+    </body>
+     
+    </center> 
+	
+</body> 
+</html>
