@@ -21,11 +21,11 @@
         <form>
           <div class="form-group">
             <label for="uname"></label>
-            <input type="text" id="username" name="uname" placeholder="Enter Email:" required>
+            <input type="text" id="username" name="uname" placeholder="Email:admin@gamil.com" required>
           </div> <br> 
           <div class="form-group">
             <label for="psw"></label>
-            <input type="text" id="password" name="psw" placeholder="Enter Phone no:" required>
+            <input type="text" id="password" name="psw" placeholder="Phone no:9080081618" required>
           </div><br>
           <div class="form-group">
             <button type="submit" class="login-button" onclick="auth()">Login</button>
@@ -41,7 +41,7 @@
      {
        var username = document.getElementById("username").value;
        var password = document.getElementById("password").value;
-       if(username == "admin@gamil.com" && password == "9080081618")
+       if(username == "admin@gmail.com" && password == "9080081618")
        {
          window.location.assign("mainpage.html");
          alert("login successful");
